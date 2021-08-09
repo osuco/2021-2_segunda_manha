@@ -25,3 +25,7 @@ Como instalar o NB 8? O professor disponibiliza duas fontes:
 1. Site oficial da Oracle, [NESTE LINK](https://www.oracle.com/technetwork/java/javase/downloads/jdk-netbeans-jsp-3413139-esa.html) - Aceite os termos da licença, copie o link correto da sua versão de Sistema Operacional e abra em uma nova guia.
 
 2. Drive público do professor, [NESTE LINK](https://drive.google.com/drive/folders/1A6m2I43PgUcC5NloemJXM-TefbyYh6EL?usp=sharing)
+
+
+
+A instalação do NB 8.2 é bastante simples, basta executar o instalar. **Recomenda-se fortemente** que o NB seja instalado no local padrão OU em um local cujo caminho não contenha espaços e/ou caracteres especiais.
