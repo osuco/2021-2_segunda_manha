@@ -1,7 +1,7 @@
 # 2021-2 - Segunda - Manhã
-**Disciplina: Aplicações Web (JEE)
+**Disciplina: Aplicações Web (JEE)**
 
-Prof. Thiago Graziani Traue (thiago.traue@uni9.pro.br)**
+**Prof. Thiago Graziani Traue (thiago.traue@uni9.pro.br)**
 
 ****
 
