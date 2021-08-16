@@ -67,15 +67,13 @@ A instalação do NB 12 é bastante simples:
 3. Baixe e instale normalmente o NB 12 mais recente, [NESTE LINK](https://netbeans.apache.org/)
 
 
-## Configurar o GlassFish no NB
-
+### 4º passo - configurar o GlassFish 5 no NB 8.2
 
 Você pode baixar o GlassFish de qualquer um dos links abaixo:
 
 1. Site oficial do GlassFish: [NESTE LINK](https://javaee.github.io/glassfish/download). Baixar a versão "Web Profile"
-
+**OU**
 2. Do drive do professor, [NESTE LINK](https://drive.google.com/drive/folders/1A6m2I43PgUcC5NloemJXM-TefbyYh6EL?usp=sharing)
-
 
 Baixe e extraia o conteúdo do arquivo zip. Você obterá uma pasta chamada "glassfish5" com três subpastas ("bin", "glassfish" e "javadb").
 
