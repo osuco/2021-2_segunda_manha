@@ -1,15 +1,14 @@
 # 2021-2 - Segunda - Manhã
-**Disciplina: Aplicações Web (JEE)**
+**Disciplina:** Programação Avançada em Orientação a Objetos
 
-**Prof. Thiago Graziani Traue (thiago.traue@uni9.pro.br)**
+**professor:** Thiago Graziani Traue (thiago.traue@uni9.pro.br)
 
-****
+***
 
 # Preparação do ambiente de desenvolvimento
 
 
 Para essa disciplina o professor utilizará o Netbeans. Existem duas versões do Netbeans atualmente, 8.2 e 12.x. O Netbeans (NB) 8 é oficial da Oracle (última versão disponibilizada), já o NB 12 em diante é mantido pela fundação Apache. Nessa disciplina o professor utilizará o NB 8.
-
 
 Se você utiliza Windows, antes de instalar o Netbeans, você precisa ter certeza que seu Sistema Operacional possui o Java instalado. Para isso, abra o terminal (prompt de comando) e digite:
 
