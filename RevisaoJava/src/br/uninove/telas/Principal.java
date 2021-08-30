@@ -1,6 +1,7 @@
 package br.uninove.telas;
 
 import br.uninove.revisaojava.Aluno;
+import br.uninove.revisaojava.Curso;
 import br.uninove.revisaojava.Professor;
 
 public class Principal {
@@ -46,5 +47,16 @@ public class Principal {
         a3.comer("Chocolate");
         
         System.out.println(p1.toString());
+        
+        Aluno a4 = new Aluno(555, "xyz@uni.com");
+        System.out.println(a4.getRa());
+        System.out.println(a4.getNome());
+        
+        Curso c = new Curso();
+        c.setNome("Cinema");
+        c.setCargaHoraria(4000);
+        c.setTipo("Bacahrelado");
+        
+        a1.setCurso(c);
     }
 }
