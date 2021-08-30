@@ -9,86 +9,109 @@
 # Preparação do ambiente de desenvolvimento
 
 
-Para essa disciplina o professor utilizará o Netbeans. Existem duas versões do Netbeans atualmente, 8.2 e 12.x. O Netbeans (NB) 8 é oficial da Oracle (última versão disponibilizada), já o NB 12 em diante é mantido pela fundação Apache. Nessa disciplina o professor utilizará o NB 8.
+### 1º passo - JRE (Java Runtime Edition)
 
-
-### 1º passo - JSE (Java Standard Edition)
-
-Se você utiliza Windows ou MacOS, antes de instalar o Netbeans, você precisa ter certeza que seu Sistema Operacional possui o Java SE instalado. Para isso, abra o terminal (prompt de comando) e digite:
+O primeiro passo para a preparação do ambiente é verificar se você já possui o Java instalado em sua máquina. Para isso, abra o terminal (prompt de comando no caso do Windows) e digite:
 
 ```
 java -version
 ```
 
-Se aparecer a versão do Java, tudo ok. Caso o comando não seja reconhecido, baixar e instalar normalmente o Java [neste link](https://www.java.com/pt-BR/download/ie_manual.jsp?locale=pt_BR)
+Se aparecer a mensagem de que "java não é um comando reconhecido", você precisa baixar e instalar, [DESTE LINK](https://www.java.com/pt-BR/download/ie_manual.jsp?locale=pt_BR). Instalar normalmente.
 
-Se você utiliza Linux e o comando também não é reconhecido, baixe e instale via terminal. Vide [este link](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-20-04-pt)
-
-
-### 2º passo - Instalação do NetBeans 8.2
-
-O professor disponibiliza duas fontes:
+Se o comando acima for bem sucedido, ou seja, o terminal lhe apresentar qualquer versão do Java maior ou igual a 8, então tudo ok no primeiro passo.
 
 
-1. Site oficial da Oracle, [NESTE LINK](https://www.oracle.com/technetwork/java/javase/downloads/jdk-netbeans-jsp-3413139-esa.html) - Aceite os termos da licença, copie o link correto da sua versão de Sistema Operacional e abra em uma nova guia.
-**OU**
-2. Drive público do professor, [NESTE LINK](https://drive.google.com/drive/folders/1A6m2I43PgUcC5NloemJXM-TefbyYh6EL?usp=sharing)
+### 2º passo - JDK (Java Development Kid)
+
+Baixar e instalar a JDK se você não a possui. Para verificar se você já possui a JDK em sua máquina, entre no terminal (prompt de comando) e digite o comando abaixo:
+
+```
+javac -version
+```
+
+Se retornar qualquer versão sendo 8, 11, 14 ou 16, tudo ok.
+
+Se não retornar, você precisará baixar e instalar a JDK (Java Development Kit) correta para seu sistema operacional, através [DESTE LINK](https://www.oracle.com/java/technologies/javase-jdk16-downloads.html).
+
+Atente-se apenas para o local de instalação, que não pode conter espaços e/ou caracteres especiais. Não há problemas em manter em "Arquivos de Programas" (ou "Program Files").
 
 
-A instalação do NB 8.2 é bastante simples, basta executar o instalador. **Recomenda-se fortemente** que o NB seja instalado no local padrão OU em um local cujo caminho não contenha espaços e/ou caracteres especiais.
+### 3º passo - NetBeans
+
+Agora vamos fazer a instalação do NetBeans, disponível [NESTE LINK](https://netbeans.apache.org/download/index.html).
+
+A instalação verificará suas versões do Java e JDK para poder prosseguir.
+
+A instalação é bastante simples e não requer nenhuma configuração prévia importante. Recomenda-se utilizar o diretório padrão de instalação.
+
+Após a instalação abrir o NetBeas e clicar em "Help" -> "About" e verificar se na segunda linha consta a palavra "Java" e alguma versão estável (8, 11, 14 e 16).
 
 
-### 3º passo - Configuração do NB 8.2
+### 4º passo - JEE (Java Enterprise Edition) no NetBeans
 
-Após a instalação, abra o NB e clique em "Ferramentas" -> "Plug-ins". Em seguida, clique na aba "Plug-ins disponíveis".
+Com o NetBeans aberto, clique em "File" -> "New Project".
 
-No campo de pesquisa, digitar "EE". Selecionar:
+No assistente, selecionar "Java with Gradle" (bloco da direita) e "Web Application" (bloco da esquerda). Clica em next.
 
- - EJB e EAR
- - Java EE Base
+Na tela seguinte o assistente irá informar que o módulo JEE não está ativo. Aguarde un pouquinho e clique no botão "Download" assim que ele aparecer. Um novo assistente será exibido. Basta seguir normalmente a instalação.
 
-Clicar no botão "instalar" (abaixo da lista). Aceitar os termos das licenças e instalar normalmente.
+Feito isso você poderá cancelar a criação do projeto.
 
-Ao finalizar a instalação, será solicitado o reinicio do NB. Clique em sim.
+<!-- 
+### 5º passo - Adicionar o JDK 8 no NetBeans
 
-Feito isso, verifique se você consegue criar projetos web com o NB, clicanco em "Arquivo" -> "Novo Projeto"
-
-
-### - OPCIONAL: Como instalar o NB 12
-
-A instalação do NB 12 é bastante simples:
-
-1. Baixe e instale a JDK mais recente [NESTE LINK](https://www.oracle.com/java/technologies/javase-jdk16-downloads.html)
+Antes de mais nada precisamos acrescentar a JDK 8 no NetBeans. Para isso utilize [ESTE LINK](https://www.oracle.com/br/java/technologies/javase/javase-jdk8-downloads.html). Instalar normalmente.
 
 
-2. Acrescente a variável "JAVA_HOME" em seu sistema. Para usuários Windows, [clique aqui](https://confluence.atlassian.com/confbr1/configurando-a-variavel-java_home-no-windows-933709538.html)
+No NetBeans clicar em "Tools" -> "Java Plataforms" e clicar no botão "Add Plataform".
+
+No assistente que abrir, manter selecionado "Java Standard Edition"m clicar em "Next" e procurar a instalação da JDK feita acima. Normalmente está em "Arquivos de programas\\Java". Selecionar a pasta "jdk1.8..." e clicar em "Next" até finalizar o processo. -->
+
+<!-- 
+### 6º passo - Adicionar o Glassfish
+
+Feito isso, vamos baixar o Glassfish 5, [NESTE LINK](https://javaee.github.io/glassfish/download) - Baixar a versão "Web Profile". [LINK ALTERNATIVO](https://drive.google.com/drive/folders/1A6m2I43PgUcC5NloemJXM-TefbyYh6EL?usp=sharing)
+
+Extrair o conteúdo do arquivo Zip e colocar a pasta "gassfish5" em um local seguro  que você não apagará acidentalmente) e sem espaços ou caracteres especiais (ex.: c:\\glassfish5).
+
+Clicar em "Window" -> "Serices" e, na guia lateral (esquerda) que surgir, clicar com o botão direito em "Servers" e clicar em "Add Server".
+
+No assistente que abrir, manter selecionado o "GlassFish" e clicar em "Next".
+
+No caminho de instalação selecionar a pasta "glasfish5" que você extraiu no acima. Clicar em "Next".
+
+Manter as configurações de domínio (domain1) e clicar em "Finish". É provável que o seu Sistema Operacional peça permissão no Firewall para as portas. Clique em "Permitir".
+
+Para testar, clique com o botão direito no "Glassfish" e "Start". Se aparecer qual JDK deve ser usada, clicar na "1.8" (ela deve aparecer na lista); após uma pequena espera ele deve ficar com a indicação de executando (uma "setinha" verde). -->
+
+### 5º passo - Adicionar o TonCat ao NetBeans
+
+Baixar o TonCat EE 9 [DESTE LINK](https://tomcat.apache.org/download-90.cgi) (não baixar o "servive installer", apenas o pacote para seu sistema operacional).
+
+Extrair normalmente para um local seguro, sem espaços e/ou caracteres especiais. 
+
+Abrir o NetBeans 12, clicar em "Window" -> "Services" e no menu lateral (esquerda) que for exibido, clicar com o botão direito em "Servers" e "Add Server".
+
+No assistente que for exibido, selecionar o "TonCat" (primeira linha), clicar em "Next". No campo "Server Location", clicar no botão "Browse" e procurar a pasta onde você extraiu o arquivo anterior. Definir um usuário e uma senha que **você não irá esquecer**. Dica: root, root OU admin, admin. Apertar "Finish".
+
+Aguardar o NB realizar as configurações automáticas. Clicar com o botão direito no servidor adicionado (no mesmo menu lateral anterior), e selecionar "Start" Aguardar. Se aparecer uma "setinha" verde, ele está ok e pronto para ser utilizado.
 
 
-3. Baixe e instale normalmente o NB 12 mais recente, [NESTE LINK](https://netbeans.apache.org/)
+## Critérios de avaliação
 
+Durante o semestre o professor fornecerá de 4 a 6 atividades de múltipla escolha, via forms, através deste git. Todas as atividades duram ao menos 14 dias.
 
-### 4º passo - configurar o GlassFish 5 no NB 8.2
+A média final do professor é calcula simplesmente pela média de suas atividades, acrescentados eventuais pontos extras.
 
-Você pode baixar o GlassFish de qualquer um dos links abaixo:
+Este professor não aplica nenhuma prova durante o semestre, ou seja, utiliza apenas as notas as atividades para compor sua média.
 
-1. Site oficial do GlassFish: [NESTE LINK](https://javaee.github.io/glassfish/download). Baixar a versão "Web Profile"
-**OU**
-2. Do drive do professor, [NESTE LINK](https://drive.google.com/drive/folders/1A6m2I43PgUcC5NloemJXM-TefbyYh6EL?usp=sharing)
+A média final de cada disciplina é calculada, **normalmente** da seguinte forma:
 
-Baixe e extraia o conteúdo do arquivo zip. Você obterá uma pasta chamada "glassfish5" com três subpastas ("bin", "glassfish" e "javadb").
+```
+Média Final = (0,4 * Avaliação Integrada) + (0,6 * Nota do professor)
+```
 
-Recorte a pasta raíz ("glassfish5") para um local seguro, ou seja, para um local onde você tenha certeza que não irá excluir acidentalmente e que não tenha espaços ou caracteres especiais.
+Avaliação integrada é uma avaliação a ser marcada pela coordenação que ocorre durante uma de suas aulas e engloba, em uma única prova, todos os conceitos das disciplinas do módulo. Na prova integrada também podem ser cobrados conceitos de conhecimentos gerais.
 
-Feito isso, abrir o NB, clicar em "Janela" -> "Serviços".
-
-Clicar com o botão direito no serviço "Servidores" e selecionar "Adicionar Servidor".
-
-No assistente que abrir, selecione "GlassFish Server" e clique em próximo.
-
-No passo seguinte, é preciso determinar o local de instalação. Este deve ser a mesma pasta extraída do passo inicial ("glassfish5").
-
-**Sugestão** no passo seguinte, escrever "domain2", desmarcar a opção "default" para a porta, e subir uma porta para cada (4849 e 8081, respectivamente).
-
-Não coloque nenhuma senha!
-
-Clique em próximo e, se o windows pedir permissão no firewall, permitir.
+Este professor não utiliza faltas como critério de avaliação.
