@@ -9,41 +9,52 @@
     <body>
         <h1>Pequena Calculadora</h1>
         <hr>
-        
+
         <%
-          String vA, vB, operacao;
-          float resultado;
-          vA = request.getParameter("vA");
-          vB = request.getParameter("vB");
-          operacao = request.getParameter("operacao");
-          
-          OperacoesBasicas mat = new OperacoesBasicas();
-          mat.setValorA(Float.parseFloat(vA));
-          mat.setValorB(Float.parseFloat(vB));
-           
-          switch(operacao) {
-              case "somar":
-                  resultado = mat.soma();
-                  break;
-              case "subtrair":
-                  resultado = mat.subtrai();
-                  break;
-              case "multiplicar":
-                  resultado = mat.multiplica();
-                  break;
-              case "dividir":
-                  resultado = mat.divide();
-                  break;
-              default:
-                  resultado = Float.NaN;
-          }
+            String vA, vB, operacao;
+            float resultado;
+            vA = request.getParameter("vA");
+            vB = request.getParameter("vB");
+            operacao = request.getParameter("operacao");
+
+            OperacoesBasicas mat = new OperacoesBasicas();
+            mat.setValorA(Float.parseFloat(vA));
+            mat.setValorB(Float.parseFloat(vB));
+
+            if (operacao.equalsIgnoreCase("somar")) {
+                resultado = mat.soma();
+            } else if (operacao.equalsIgnoreCase("subtrair")) {
+                resultado = mat.subtrai();
+            } else if (operacao.equalsIgnoreCase("multiplicar")) {
+                resultado = mat.multiplica();
+            } else {
+                resultado = mat.divide();
+            }
+
+            //isso só funciona no JEE 8 em diante:
+//            switch (operacao) {
+//                case "somar":
+//                    resultado = mat.soma();
+//                    break;
+//                case "subtrair":
+//                    resultado = mat.subtrai();
+//                    break;
+//                case "multiplicar":
+//                    resultado = mat.multiplica();
+//                    break;
+//                case "dividir":
+//                    resultado = mat.divide();
+//                    break;
+//                default:
+//                    resultado = Float.NaN;
+//            }
         %>
-        
-        <p><strong>Valor A:</strong> <%= vA %></p>
-        <p><strong>Valor B:</strong> <%= vB %></p>
-        <p><strong>Operação:</strong> <%= operacao %></p>
-        
-        <p><strong>Resultado:</strong> <%= resultado %></p>
-        
+
+        <p><strong>Valor A:</strong> <%= vA%></p>
+        <p><strong>Valor B:</strong> <%= vB%></p>
+        <p><strong>Operação:</strong> <%= operacao%></p>
+
+        <p><strong>Resultado:</strong> <%= resultado%></p>
+
     </body>
 </html>
