@@ -6,12 +6,12 @@ import com.google.gson.JsonSyntaxException;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.Reader;
 import java.net.URL;
 import java.net.URLConnection;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
-import jdk.internal.org.jline.utils.InputStreamReader;
 
 public class Http {
 
@@ -22,7 +22,7 @@ public class Http {
 
             //1º passo: montar a requisição para a API
             String url = "http://api.openweathermap.org/data/2.5/weather"; //url da API
-            String appid = "bb6de04d46bbe39f2bed9326300f67ad"; //Coloque a SUA chave de API
+            String appid = ""; //Coloque a SUA chave de API
             String units = "metric"; //Unidades que queremos que retorn
             String lang = "pt_br"; //Idioda de retorno
             String charset = StandardCharsets.UTF_8.name(); //Codificação para os parâmetros
@@ -71,5 +71,4 @@ public class Http {
         }
         return sb.toString();
     }
-
 }
