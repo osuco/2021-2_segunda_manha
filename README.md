@@ -6,6 +6,13 @@
 
 ***
 
+**O Prof. Thiago estará afastado entre os dias 27.09 e 01.09. Por favor, veja a atividades disponível abaixo**
+
+# Atividades
+
+ - Atividade 1: Será liberada no dia 27.09 até 04.10
+
+
 # Preparação do ambiente de desenvolvimento
 
 
