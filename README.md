@@ -10,6 +10,9 @@
 
 # Atividades
 
+**Atenção**: Utilize seu e-mail **institucional** para acessar as atividades!
+
+
  - Atividade 1: [LINK DA ATIVIDADE](https://forms.gle/BK5NLCsqGsPk5gRS8) - De 27.09 até 04.10, 09h
 
 
