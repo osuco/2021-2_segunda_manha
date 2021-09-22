@@ -10,7 +10,14 @@
 
 # Atividades
 
- - Atividade 1: Será liberada no dia 27.09 até 04.10
+ - Atividade 1: [LINK DA ATIVIDADE](https://forms.gle/BK5NLCsqGsPk5gRS8) - De 27.09 até 04.10, 09h
+
+
+Após a realização da **Atividade 1**, leia os seguintes artigos:
+
+ - [JEE, um caminho prazeroso e interessante](https://www.devmedia.com.br/jee-um-caminho-prazeroso-e-interessante/3747), DevMedia
+ - [Ciclo de Vida de um JSP](https://materialpublic.imd.ufrn.br/curso/disciplina/3/46/5/4)
+ - [Introdução à Servlets em Java](https://www.devmedia.com.br/introducao-a-servlets-em-java/25285)
 
 
 # Preparação do ambiente de desenvolvimento
