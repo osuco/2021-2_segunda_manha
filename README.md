@@ -6,14 +6,13 @@
 
 ***
 
-**O Prof. Thiago estará afastado entre os dias 27.09 e 01.09. Por favor, veja a atividades disponível abaixo**
-
 # Atividades
 
 **Atenção**: Utilize seu e-mail **institucional** para acessar as atividades!
 
 
- - Atividade 1: [LINK DA ATIVIDADE](https://forms.gle/BK5NLCsqGsPk5gRS8) - De 27.09 até 04.10, 09h
+ - Atividade 1: [LINK DA ATIVIDADE](https://forms.gle/BK5NLCsqGsPk5gRS8) - De 27.09 até 04.10, 09h - Encerrada
+ - Atividade 2: SERÁ LIBERADA EM BREVE
 
 
 Após a realização da **Atividade 1**, leia os seguintes artigos:
