@@ -22,7 +22,7 @@ public class Http {
 
             //1º passo: montar a requisição para a API
             String url = "http://api.openweathermap.org/data/2.5/weather"; //url da API
-            String appid = ""; //Coloque a SUA chave de API
+            String appid = "70490ee3c06c559a659a5d846008bbd3"; //Coloque a SUA chave de API
             String units = "metric"; //Unidades que queremos que retorn
             String lang = "pt_br"; //Idioda de retorno
             String charset = StandardCharsets.UTF_8.name(); //Codificação para os parâmetros
