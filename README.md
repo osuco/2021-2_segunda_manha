@@ -11,15 +11,10 @@
 **Atenção**: Utilize seu e-mail **institucional** para acessar as atividades!
 
 
- - Atividade 1: [LINK DA ATIVIDADE](https://forms.gle/BK5NLCsqGsPk5gRS8) - De 27.09 até 04.10, 09h - Encerrada
- - Atividade 2: SERÁ LIBERADA EM BREVE
+ - Atividade 1: [LINK DA ATIVIDADE](https://forms.gle/BK5NLCsqGsPk5gRS8) - De 27.09 até 06.12, 09h
+ - Atividade 2: [LINK DA ATIVIDADE](https://forms.gle/v8SXQMMP9pJZAeKf9) - De 18.10 até 25.10, 09h
 
 
-Após a realização da **Atividade 1**, leia os seguintes artigos:
-
- - [JEE, um caminho prazeroso e interessante](https://www.devmedia.com.br/jee-um-caminho-prazeroso-e-interessante/3747), DevMedia
- - [Ciclo de Vida de um JSP](https://materialpublic.imd.ufrn.br/curso/disciplina/3/46/5/4)
- - [Introdução à Servlets em Java](https://www.devmedia.com.br/introducao-a-servlets-em-java/25285)
 
 
 # Preparação do ambiente de desenvolvimento
@@ -74,32 +69,6 @@ Na tela seguinte o assistente irá informar que o módulo JEE não está ativo. 
 
 Feito isso você poderá cancelar a criação do projeto.
 
-<!-- 
-### 5º passo - Adicionar o JDK 8 no NetBeans
-
-Antes de mais nada precisamos acrescentar a JDK 8 no NetBeans. Para isso utilize [ESTE LINK](https://www.oracle.com/br/java/technologies/javase/javase-jdk8-downloads.html). Instalar normalmente.
-
-
-No NetBeans clicar em "Tools" -> "Java Plataforms" e clicar no botão "Add Plataform".
-
-No assistente que abrir, manter selecionado "Java Standard Edition"m clicar em "Next" e procurar a instalação da JDK feita acima. Normalmente está em "Arquivos de programas\\Java". Selecionar a pasta "jdk1.8..." e clicar em "Next" até finalizar o processo. -->
-
-<!-- 
-### 6º passo - Adicionar o Glassfish
-
-Feito isso, vamos baixar o Glassfish 5, [NESTE LINK](https://javaee.github.io/glassfish/download) - Baixar a versão "Web Profile". [LINK ALTERNATIVO](https://drive.google.com/drive/folders/1A6m2I43PgUcC5NloemJXM-TefbyYh6EL?usp=sharing)
-
-Extrair o conteúdo do arquivo Zip e colocar a pasta "gassfish5" em um local seguro  que você não apagará acidentalmente) e sem espaços ou caracteres especiais (ex.: c:\\glassfish5).
-
-Clicar em "Window" -> "Serices" e, na guia lateral (esquerda) que surgir, clicar com o botão direito em "Servers" e clicar em "Add Server".
-
-No assistente que abrir, manter selecionado o "GlassFish" e clicar em "Next".
-
-No caminho de instalação selecionar a pasta "glasfish5" que você extraiu no acima. Clicar em "Next".
-
-Manter as configurações de domínio (domain1) e clicar em "Finish". É provável que o seu Sistema Operacional peça permissão no Firewall para as portas. Clique em "Permitir".
-
-Para testar, clique com o botão direito no "Glassfish" e "Start". Se aparecer qual JDK deve ser usada, clicar na "1.8" (ela deve aparecer na lista); após uma pequena espera ele deve ficar com a indicação de executando (uma "setinha" verde). -->
 
 ### 5º passo - Adicionar o TonCat ao NetBeans
 
@@ -131,3 +100,11 @@ Média Final = (0,4 * Avaliação Integrada) + (0,6 * Nota do professor)
 Avaliação integrada é uma avaliação a ser marcada pela coordenação que ocorre durante uma de suas aulas e engloba, em uma única prova, todos os conceitos das disciplinas do módulo. Na prova integrada também podem ser cobrados conceitos de conhecimentos gerais.
 
 Este professor não utiliza faltas como critério de avaliação.
+
+
+
+## Links extras
+
+ - [JEE, um caminho prazeroso e interessante](https://www.devmedia.com.br/jee-um-caminho-prazeroso-e-interessante/3747), DevMedia
+ - [Ciclo de Vida de um JSP](https://materialpublic.imd.ufrn.br/curso/disciplina/3/46/5/4)
+ - [Introdução à Servlets em Java](https://www.devmedia.com.br/introducao-a-servlets-em-java/25285)
