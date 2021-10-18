@@ -52,7 +52,7 @@
                         <img src="http://openweathermap.org/img/wn/<%=clima.getWeather().get(0).getIcon()%>@2x.png">
                         <h3>Cidade: <%= clima.getName() + ", " + clima.getSys().getCountry()%></h3>
                     </div>
-                    <hr>utils
+                    <hr>
                     <div>
                         <p><strong>Agora: </strong><%= StrUtils.capitalize(clima.getWeather().get(0).getDescription())%></p>
                         <p><strong>Temperatura: </strong><%= Math.round(clima.getMain().getTemp())%> ºC</p>
