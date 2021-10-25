@@ -24,7 +24,7 @@
 
             //Gera os objetos das cookies:
             Cookie cookieNome = new Cookie("cookieNome", nomeUTF);
-            Cookie cookieSobrenome = new Cookie("cookieSobrenome", sobrenome);
+            Cookie cookieSobrenome = new Cookie("cookieSobrenome", sobrenomeUTF);
 
             //Seta a versão das cookies para a mais compatível:
             cookieNome.setVersion(0);
