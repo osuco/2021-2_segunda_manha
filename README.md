@@ -13,7 +13,7 @@
 
  - Atividade 1: [LINK DA ATIVIDADE](https://forms.gle/BK5NLCsqGsPk5gRS8) - De 27.09 até 06.12, 09h
  - Atividade 2: [LINK DA ATIVIDADE](https://forms.gle/v8SXQMMP9pJZAeKf9) - De 18.10 até 25.10, 09h
-
+ - Atividade 3: [LINK DA ATIVIDADE](https://forms.gle/3RkZdNBe8WJVBKuPA) - De 25.10 até 22.11, 09h
 
 
 
