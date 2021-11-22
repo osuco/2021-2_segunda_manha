@@ -20,6 +20,12 @@
  - Atividade 4: [LINK DA ATIVIDADE](https://forms.gle/75xLwr32uE8RuB496) - De 08.11 até 06.12, 09h
  - Atividade 5: [LINK DA ATIVIDADE](https://forms.gle/3Bdvbo6FXR3gs9Rx7) - De 22.11 até 06.12, 09h
 
+Observações:
+
+ 1. Para verificar se você já realizou alguma atividade, basta acessá-la. Se aparecer a mensagem "Você já respondeu", então você já a realizou. Caso contrário, ainda não. 
+ 2. Se aparecer a mensagem "Sem permissão", então você está acesando a atividade com um e-mail que não é o institucional. Sugestão: Nestecaso, abra uma guia anônima para realizar a atividade
+ 3. Se aparecer a mensagem "Você já respondeu", mas no controle do Prof. (exibido apenas ao vivo durante as aulas) aparecer a mensagem "Não fez" em alguma atividade, então, muito provavlemente, você digitou o RA incorretamente.
+ 
 
 # Preparação do ambiente de desenvolvimento
 
