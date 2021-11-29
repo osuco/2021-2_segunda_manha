@@ -1,8 +1,8 @@
 package br.sisacademico.util;
 
 public enum AcaoDao {
-    leitura,
-    cadastro,
-    edicao,
-    exclusao;
+    cadastro, //C (CREATE)
+    leitura, // R (READ)
+    edicao, //U (UPDATE)
+    exclusao; //D (DELETE)
 }

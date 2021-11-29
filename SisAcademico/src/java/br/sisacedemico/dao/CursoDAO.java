@@ -4,7 +4,7 @@ import br.sisacademico.model.Curso;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 //Essa classe é responsável por fazer o CRUD de Cursos
@@ -23,7 +23,7 @@ public class CursoDAO {
                 + " ORDER BY"
                 + "    CURSO.NOME_CURSO";
         
-        Map<Curso, Integer> relatorio = new HashMap<>();
+        Map<Curso, Integer> relatorio = new LinkedHashMap<>();
         
         stm = ConnectionFactory.getConnection().createStatement(
                 ResultSet.TYPE_SCROLL_INSENSITIVE,

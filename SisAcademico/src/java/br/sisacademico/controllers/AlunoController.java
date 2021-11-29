@@ -1,12 +1,12 @@
 package br.sisacademico.controllers;
 
-import br.sisacademico.model.Curso;
+import br.sisacademico.model.Aluno;
 import br.sisacademico.util.AcaoDao;
-import br.sisacedemico.dao.CursoDAO;
+import br.sisacedemico.dao.AlunoDAO;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.SQLException;
-import java.util.Map;
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.ServletException;
@@ -15,26 +15,31 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-public class CursoController extends HttpServlet {
+public class AlunoController extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException, SQLException {
         response.setContentType("text/html;charset=UTF-8");
+        AcaoDao act = AcaoDao.valueOf(request.getParameter("acao"));
+        AlunoDAO aDAO = new AlunoDAO();
         try (PrintWriter out = response.getWriter()) {
-            AcaoDao act = AcaoDao.valueOf(request.getParameter("acao"));
-            CursoDAO cDAO = new CursoDAO();
             switch (act) {
                 case leitura:
-                    Map<Curso, Integer> cursos = cDAO.getTodosCursosCountAlunos();
+                    ArrayList<Aluno> alunos;
+                    String url = "./relatorios/aluno.jsp";
+                    if (request.getParameter("idCurso") == null) {
+                        alunos = aDAO.getAlunos();
+                    } else {
+                        alunos = aDAO.getAlunos(
+                                Integer.parseInt(request.getParameter("idCurso")));
+                        
+                        url += "?idCurso=" + request.getParameter("idCurso");
+                    }
                     
-                    //forma 1: Colocando o map na sessão:
                     HttpSession session = request.getSession();
-                    session.setAttribute("listaDeCursos", cursos);
-                    response.sendRedirect("./relatorios/curso.jsp");
+                    session.setAttribute("listaDeAlunos", alunos);
                     
-                    //forma 2: Enviando o mapa via parâmetro do request:
-                    //request.setAttribute("listaDeCursos", cursos);
-                    //request.getRequestDispatcher("/relatorios.curso.jsp").forward(request, response);                    
+                    response.sendRedirect(url);
                     break;
                 case cadastro:
                     break;
@@ -55,7 +60,7 @@ public class CursoController extends HttpServlet {
         try {
             processRequest(request, response);
         } catch (SQLException ex) {
-            Logger.getLogger(CursoController.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(AlunoController.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
@@ -65,7 +70,7 @@ public class CursoController extends HttpServlet {
         try {
             processRequest(request, response);
         } catch (SQLException ex) {
-            Logger.getLogger(CursoController.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(AlunoController.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
