@@ -41,6 +41,10 @@ public class CursoController extends HttpServlet {
                 case edicao:
                     break;
                 case exclusao:
+                    int idCurso = Integer.parseInt(request.getParameter("idCurso"));
+                    if(cDAO.deleteCurso(idCurso)) {
+                        response.sendRedirect("./relatorios/loader.jsp?pagina=curso");
+                    }
                     break;
                 default:
                     break;

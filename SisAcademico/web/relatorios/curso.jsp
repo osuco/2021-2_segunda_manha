@@ -60,7 +60,7 @@
                             </td>
                             <% } else { %>
                             <td class="text-center">
-                                <a href="#" id="deleteCurso" class="btn btn-outline-danger">Excluir</a>
+                                <a href="../CursoController?acao=exclusao&idCurso=<%=c.getKey().getIdCurso()%>" id="deleteCurso" class="btn btn-outline-danger">Excluir</a>
                             </td>
                             <% } %>
                         </tr>
