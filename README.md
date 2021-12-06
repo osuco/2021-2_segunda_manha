@@ -14,18 +14,25 @@
 **Atenção**: Utilize seu e-mail **institucional** para acessar as atividades!
 
 
- - Atividade 1: [LINK DA ATIVIDADE](https://forms.gle/BK5NLCsqGsPk5gRS8) - De 27.09 até 06.12, 09h
- - Atividade 2: [LINK DA ATIVIDADE](https://forms.gle/v8SXQMMP9pJZAeKf9) - De 18.10 até 06.12, 09h
- - Atividade 3: [LINK DA ATIVIDADE](https://forms.gle/3RkZdNBe8WJVBKuPA) - De 25.10 até 06.12, 09h
- - Atividade 4: [LINK DA ATIVIDADE](https://forms.gle/75xLwr32uE8RuB496) - De 08.11 até 06.12, 09h
- - Atividade 5: [LINK DA ATIVIDADE](https://forms.gle/3Bdvbo6FXR3gs9Rx7) - De 22.11 até 06.12, 09h
+ - Atividade 1: [LINK DA ATIVIDADE](https://forms.gle/BK5NLCsqGsPk5gRS8) - De 27.09 até 06.12, 09h - Encerrada
+ - Atividade 2: [LINK DA ATIVIDADE](https://forms.gle/v8SXQMMP9pJZAeKf9) - De 18.10 até 06.12, 09h - Encerrada
+ - Atividade 3: [LINK DA ATIVIDADE](https://forms.gle/3RkZdNBe8WJVBKuPA) - De 25.10 até 06.12, 09h - Encerrada
+ - Atividade 4: [LINK DA ATIVIDADE](https://forms.gle/75xLwr32uE8RuB496) - De 08.11 até 06.12, 09h - Encerrada
+ - Atividade 5: [LINK DA ATIVIDADE](https://forms.gle/3Bdvbo6FXR3gs9Rx7) - De 22.11 até 06.12, 09h - Encerrada
 
-Observações:
+As atividades da disciplina já estão devidamente encerradas.
 
- 1. Para verificar se você já realizou alguma atividade, basta acessá-la. Se aparecer a mensagem "Você já respondeu", então você já a realizou. Caso contrário, ainda não. 
- 2. Se aparecer a mensagem "Sem permissão", então você está acesando a atividade com um e-mail que não é o institucional. Sugestão: Nestecaso, abra uma guia anônima para realizar a atividade
- 3. Se aparecer a mensagem "Você já respondeu", mas no controle do Prof. (exibido apenas ao vivo durante as aulas) aparecer a mensagem "Não fez" em alguma atividade, então, muito provavlemente, você digitou o RA incorretamente.
- 
+## Atividade de recuperação
+
+(Apenas para selecionados)
+
+ 1. Implementar uma solucção para o problema de concorência da Sistema Acadêmico
+ 2. Enviar por e-mail ao Prof. Traue (thiago.traue@uni9.pro.br)
+ 3. Enviar o projeto zipado OU link do git
+
+
+Prazo: 06.12, 23.59h
+
 
 # Preparação do ambiente de desenvolvimento
 
