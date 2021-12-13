@@ -1,7 +1,10 @@
+<%@page import="java.util.LinkedHashMap"%>
 <%@page import="java.util.Map"%>
 <%@page import="br.sisacademico.model.Curso"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%
+    response.setContentType("text/html; charset=UTF-8");
+    request.setCharacterEncoding("UTF-8");
     Map<Curso, Integer> listaDeCursos = (Map) session.getAttribute("listaDeCursos");
 %>
 <!DOCTYPE html>
@@ -11,7 +14,7 @@
     </head>
     <body>
         <jsp:include page="../menu.jsp"></jsp:include>
-        <script src="../js/modalExclusao.js"></script>
+            <script src="../js/modalExclusao.js"></script>
             <script>
                 $(function () {
                     $('[data-toggle="tooltip"]').tooltip();
@@ -42,14 +45,14 @@
                                             style="pointer-events: none;" type="button">Alunos Matriculados</button>
                                 </span>
                             </td>
-                            <% } else { %>
+                            <% } else {%>
                             <td class="text-center">
                                 <a href="./loader.jsp?pagina=aluno&idCurso=<%=c.getKey().getIdCurso()%>" class="btn btn-outline-info">Alunos Matriculados</a>
                             </td>
-                            <% } %>
+                            <% }%>
 
                             <td class="text-center">
-                                <a class="btn btn-outline-success" href="#">Editar</a>
+                                <a class="btn btn-outline-success" href="../cadastros/curso.jsp?idCurso=<%=c.getKey().getIdCurso()%>">Editar</a>
                             </td>
                             <% if (c.getValue() != 0) { %>
                             <td class="text-center">
@@ -58,7 +61,7 @@
                                             style="pointer-events: none;" type="button">Excluir</button>
                                 </span>
                             </td>
-                            <% } else { %>
+                            <% } else {%>
                             <td class="text-center">
                                 <a href="../CursoController?acao=exclusao&idCurso=<%=c.getKey().getIdCurso()%>" id="deleteCurso" class="btn btn-outline-danger">Excluir</a>
                             </td>
@@ -67,6 +70,7 @@
                         <% }%>
                     </tbody>
                 </table>
+                <a href="../cadastros/curso.jsp" class="btn btn-success">Novo Curso</a>
             </div>
         </div>
     </body>

@@ -53,8 +53,12 @@
                             <td><%=a.getNome()%></td>
                             <td><%=a.getCurso().getNomeCurso()%></td>
                             <td><%=a.getCurso().getTipoCurso()%></td>
-                            <td class="text-center"><a class="btn btn-outline-primary" href="#">Editar</a></td>
-                            <td class="text-center"><a class="btn btn-outline-danger" id="deleteAluno" href="#">Excluir</td>
+                            <td class="text-center"><a class="btn btn-outline-primary" href="../cadastros/aluno.jsp?idAluno=<%=a.getIdAluno()%>">Editar</a></td>
+                            <% if (mostraPainelFiltro) {%>
+                            <td class="text-center"><a class="btn btn-outline-danger" id="deleteAluno" href="../AlunoController?acao=exclusao&idCurso=<%=alunos.get(0).getCurso().getIdCurso()%>&idAluno=<%=a.getIdAluno()%>">Excluir</td>
+                            <% } else {%>
+                            <td class="text-center"><a class="btn btn-outline-danger" id="deleteAluno" href="../AlunoController?acao=exclusao&idAluno=<%=a.getIdAluno()%>">Excluir</td>
+                            <% } %>
                         </tr>
                         <% }%>
                     </tbody>

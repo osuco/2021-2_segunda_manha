@@ -42,10 +42,21 @@ public class AlunoController extends HttpServlet {
                     response.sendRedirect(url);
                     break;
                 case cadastro:
+                    out.print("Precisamos implementar...");
                     break;
                 case edicao:
+                    out.print("Precisamos implementar...");
                     break;
                 case exclusao:
+                    int idAluno = Integer.parseInt(request.getParameter("idAluno"));
+                    if(aDAO.deleteAluno(idAluno)) {
+                        if(request.getParameter("idCurso") == null) {
+                            response.sendRedirect("./relatorios/loader.jsp?pagina=aluno");
+                        } else {
+                            int idCurso = Integer.parseInt(request.getParameter("idCurso"));
+                            response.sendRedirect("./relatorios/loader.jsp?idCurso=" + idCurso + "&pagina=aluno");
+                        }
+                    }
                     break;
                 default:
                     break;
